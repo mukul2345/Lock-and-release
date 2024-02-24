@@ -1073,14 +1073,14 @@
       ]
     },
     "E:\\Wasserstoff-Task-1\\contracts\\Bridge.sol": {
-      "lastModificationDate": 1708748793768,
+      "lastModificationDate": 1708750469040,
       "contentHash": "abf94aa91e63856775dbbd8871d05124",
       "sourceName": "contracts/Bridge.sol",
       "solcConfig": {
         "version": "0.8.17",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 500,
             "details": {
               "yul": false
@@ -1099,9 +1099,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -1117,14 +1114,14 @@
       ]
     },
     "E:\\Wasserstoff-Task-1\\contracts\\WERC20Factory.sol": {
-      "lastModificationDate": 1708748793768,
+      "lastModificationDate": 1708750469040,
       "contentHash": "35db9c497d03140f52361d0336e91061",
       "sourceName": "contracts/WERC20Factory.sol",
       "solcConfig": {
         "version": "0.8.17",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 500,
             "details": {
               "yul": false
@@ -1143,9 +1140,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -1168,7 +1162,7 @@
         "version": "0.8.17",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 500,
             "details": {
               "yul": false
@@ -1187,9 +1181,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -1207,14 +1198,14 @@
       ]
     },
     "E:\\Wasserstoff-Task-1\\contracts\\WERC20.sol": {
-      "lastModificationDate": 1708748793768,
+      "lastModificationDate": 1708750469040,
       "contentHash": "0a49e72b7c9870ab74d79da9791ce917",
       "sourceName": "contracts/WERC20.sol",
       "solcConfig": {
         "version": "0.8.17",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 500,
             "details": {
               "yul": false
@@ -1233,9 +1224,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -1260,7 +1248,7 @@
         "version": "0.8.17",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 500,
             "details": {
               "yul": false
@@ -1279,9 +1267,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -1303,7 +1288,7 @@
         "version": "0.8.17",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 500,
             "details": {
               "yul": false
@@ -1322,9 +1307,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -1348,7 +1330,7 @@
         "version": "0.8.17",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 500,
             "details": {
               "yul": false
@@ -1367,9 +1349,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -1389,7 +1368,7 @@
         "version": "0.8.17",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 500,
             "details": {
               "yul": false
@@ -1408,9 +1387,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -1433,7 +1409,7 @@
         "version": "0.8.17",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 500,
             "details": {
               "yul": false
@@ -1452,9 +1428,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -1474,7 +1447,7 @@
         "version": "0.8.17",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 500,
             "details": {
               "yul": false
@@ -1493,9 +1466,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -1517,7 +1487,7 @@
         "version": "0.8.17",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 500,
             "details": {
               "yul": false
@@ -1536,9 +1506,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -1558,7 +1525,7 @@
         "version": "0.8.17",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 500,
             "details": {
               "yul": false
@@ -1577,9 +1544,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -1605,7 +1569,7 @@
         "version": "0.8.17",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 500,
             "details": {
               "yul": false
@@ -1624,9 +1588,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -1648,7 +1609,7 @@
         "version": "0.8.17",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 500,
             "details": {
               "yul": false
@@ -1667,9 +1628,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -1693,7 +1651,7 @@
         "version": "0.8.17",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 500,
             "details": {
               "yul": false
@@ -1712,9 +1670,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -1734,7 +1689,7 @@
         "version": "0.8.17",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 500,
             "details": {
               "yul": false
@@ -1753,9 +1708,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -1775,7 +1727,7 @@
         "version": "0.8.17",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 500,
             "details": {
               "yul": false
@@ -1794,9 +1746,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -1819,7 +1768,7 @@
         "version": "0.8.17",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 500,
             "details": {
               "yul": false
@@ -1838,9 +1787,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -1860,7 +1806,7 @@
         "version": "0.8.17",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 500,
             "details": {
               "yul": false
@@ -1879,9 +1825,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -1901,7 +1844,7 @@
         "version": "0.8.17",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 500,
             "details": {
               "yul": false
@@ -1920,9 +1863,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -1942,7 +1882,7 @@
         "version": "0.8.17",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 500,
             "details": {
               "yul": false
@@ -1961,9 +1901,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -1985,7 +1922,7 @@
         "version": "0.8.17",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 500,
             "details": {
               "yul": false
@@ -2004,9 +1941,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -2026,7 +1960,7 @@
         "version": "0.8.17",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 500,
             "details": {
               "yul": false
@@ -2045,9 +1979,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -2069,7 +2000,7 @@
         "version": "0.8.17",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 500,
             "details": {
               "yul": false
@@ -2088,9 +2019,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -2110,7 +2038,7 @@
         "version": "0.8.17",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 500,
             "details": {
               "yul": false
@@ -2129,9 +2057,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
