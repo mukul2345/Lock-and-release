@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for contracts\WERC20Factory.sol</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">contracts/</a> WERC20Factory.sol
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>24/24</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">87.04% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>47/54</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>11/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>37/37</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">209×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">205×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">69×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">68×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">40×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">37×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">24×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">22×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">68×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">67×</span>
+<span class="cline-any cline-yes">67×</span>
+<span class="cline-any cline-yes">67×</span>
+<span class="cline-any cline-yes">67×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">105×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">19×</span>
+<span class="cline-any cline-yes">19×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18×</span>
+<span class="cline-any cline-yes">18×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// SPDX-License-Identifier: MIT
+pragma solidity 0.8.17;
+&nbsp;
+import "./WERC20.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+&nbsp;
+error WERC20Factory__TokenAlreadyExists(string tokenSymbol);
+error WERC20Factory__TokenDoesNotExist(string tokenSymbol);
+error WERC20Factory__EmptySymbol();
+error WERC20Factory__EmptyName();
+error WERC20Factory__CannotPassZeroAddress();
+error WERC20Factory__AmountCannotBeZoro();
+&nbsp;
+contract WERC20Factory is Ownable {
+    event NewWERC20(
+        address indexed werc20,
+        string indexed name,
+        string indexed symbol
+    );
+&nbsp;
+    mapping(string =&gt; address) public werc20s;
+&nbsp;
+    modifier onlyValidSymbol(string memory symbol) {
+        if (keccak256(bytes(symbol)) == keccak256(bytes(""))) {
+            revert WERC20Factory__EmptySymbol();
+        }
+        _;
+    }
+&nbsp;
+    modifier onlyValidName(string memory name) {
+        if (keccak256(bytes(name)) == keccak256(bytes(""))) {
+            revert WERC20Factory__EmptyName();
+        }
+        _;
+    }
+&nbsp;
+    modifier onlyValidAddress(address addr) {
+        if (addr == address(0)) {
+            revert WERC20Factory__CannotPassZeroAddress();
+        }
+        _;
+    }
+&nbsp;
+    modifier onlyValidAmount(uint256 amount) {
+        if (amount == 0) {
+            revert WERC20Factory__AmountCannotBeZoro();
+        }
+        _;
+    }
+&nbsp;
+    function createWERC20(string memory _name, string memory _symbol)
+        public
+        <span class="missing-if-branch" title="else path not taken" >E</span>onlyOwner
+        onlyValidSymbol(_symbol)
+        onlyValidName(_name)
+        returns (address)
+    {
+        if (werc20s[_symbol] != address(0))
+            revert WERC20Factory__TokenAlreadyExists(_symbol);
+        address werc20 = address(new WrapperToken(_name, _symbol));
+        werc20s[_symbol] = werc20;
+        emit NewWERC20(werc20, _name, _symbol);
+        return werc20;
+    }
+&nbsp;
+    function getWERC20(string memory _symbol)
+        public
+        view
+        <span class="missing-if-branch" title="else path not taken" >E</span>onlyValidSymbol(_symbol)
+        returns (address)
+    {
+        return werc20s[_symbol];
+    }
+&nbsp;
+    // Mint function
+    function mint(
+        string memory _symbol,
+        address _to,
+        uint256 _amount
+    )
+        external
+        onlyOwner
+        onlyValidAddress(_to)
+        onlyValidSymbol(_symbol)
+        onlyValidAmount(_amount)
+        returns (bool)
+    {
+        address werc20 = getWERC20(_symbol);
+        if (werc20 == address(0))
+            revert WERC20Factory__TokenDoesNotExist(_symbol);
+&nbsp;
+        WrapperToken(werc20).mint(_to, _amount);
+        return true;
+    }
+&nbsp;
+    // Get balance
+    function balanceOf(string memory _symbol, address _account)
+        external
+        view
+        onlyValidSymbol(_symbol)
+        <span class="missing-if-branch" title="else path not taken" >E</span>onlyValidAddress(_account)
+        returns (uint256)
+    {
+        address werc20 = getWERC20(_symbol);
+        if (werc20 == address(0))
+            revert WERC20Factory__TokenDoesNotExist(_symbol);
+        return WrapperToken(werc20).balanceOf(_account);
+    }
+&nbsp;
+    // Burn function
+    function burn(
+        address _tokenAddress,
+        address _from,
+        uint256 _amount
+    )
+        external
+        onlyOwner
+        onlyValidAddress(_tokenAddress)
+        onlyValidAddress(_from)
+        onlyValidAmount(_amount)
+        returns (bool)
+    {
+        WrapperToken(_tokenAddress).burnFrom(_from, _amount);
+        return true;
+    }
+&nbsp;
+    // Burn with permit function
+    function burnWithPermit(
+        address _tokenAddress,
+        address _from,
+        uint256 _amount,
+        uint256 _deadline,
+        uint8 _v,
+        bytes32 _r,
+        bytes32 _s
+    )
+        external
+        <span class="missing-if-branch" title="else path not taken" >E</span>onlyOwner
+        <span class="missing-if-branch" title="else path not taken" >E</span>onlyValidAddress(_tokenAddress)
+        <span class="missing-if-branch" title="else path not taken" >E</span>onlyValidAddress(_from)
+        <span class="missing-if-branch" title="else path not taken" >E</span>onlyValidAmount(_amount)
+        returns (bool)
+    {
+        IERC20Permit(_tokenAddress).permit(
+            _from,
+            address(this),
+            _amount,
+            _deadline,
+            _v,
+            _r,
+            _s
+        );
+&nbsp;
+        WrapperToken(_tokenAddress).burnFrom(_from, _amount);
+        return true;
+    }
+&nbsp;
+    // Get My balance
+    function myBalanceOf(string memory _symbol)
+        external
+        view
+        onlyValidSymbol(_symbol)
+        returns (uint256)
+    {
+        address werc20 = getWERC20(_symbol);
+        if (werc20 == address(0))
+            revert WERC20Factory__TokenDoesNotExist(_symbol);
+&nbsp;
+        return WrapperToken(werc20).balanceOf(msg.sender);
+    }
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sat Feb 24 2024 09:59:22 GMT+0530 (India Standard Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
